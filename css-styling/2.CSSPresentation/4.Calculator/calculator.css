@@ -1,0 +1,245 @@
+:root {
+    color: #193457;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    padding-top: 5px;
+    background-color: #D0E5FA;
+    border-radius: 5px;
+}
+
+.calculator .header:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-image: url('images/icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.calculator .header {
+    margin-bottom: 10px;
+}
+
+.calculator .header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 5px;
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    background-image: url('images/buttons.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.calculator .content-wrapper {
+    border: 1px solid #142231;
+    border-radius: 2px;
+    box-shadow: 0 0 1px #F0FAFF;
+}
+
+.calculator .display, .calculator .bits,
+.calculator .keyboard button, .calculator .formats .group,
+.calculator .operations.memory button:hover {
+    border: 1px solid #F0FAFF;
+    border-radius: 2px;
+    box-shadow: 0 0 1px #142231;
+}
+
+.calculator .file-menu {
+    padding: 2px 5px;
+    background: linear-gradient(#FFFFFF 20%, #D3DAED 45%, #E3E8F8 70%);
+    border-bottom: 1px solid #C1C5D1;
+}
+
+.calculator .file-menu button {
+    margin-right: 10px;
+}
+
+.calculator .file-menu button:first-letter {
+    text-decoration: underline;
+}
+
+.calculator button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+    padding: 0;
+    color: #193457;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.calculator .content {
+    padding: 10px;
+    background: linear-gradient(#EEF5FE 5%, #DFE8F4 12%, #D9E4F1 20%);
+}
+
+.calculator .display {
+    padding: 20px 5px 10px;
+    text-align: right;
+    font-size: 24px;
+    line-height: 16px;
+    background: linear-gradient(#E5EEFB 20%, #FFFFFF);
+}
+
+.calculator .bits {
+    padding: 5px;
+    padding-left: 10px;
+    margin: 8px 0 5px 0;
+    word-spacing: -5px;
+    font-family: 'Consolas', monospace;
+    background-color: #D9E4F1;
+}
+
+.calculator .bits .quad {
+    display: inline-block;
+}
+
+.calculator .bits .row.bin span {
+    margin-right: 15px;
+}
+
+.calculator .bits .quad:last-child .row.bin span:last-child {
+    margin: 0;
+}
+
+.calculator .bits .row.dec {
+    position: relative;
+    color: #64625E;
+}
+
+.calculator .bits .row.dec .end {
+    position: absolute;
+    right: 0;
+}
+
+.calculator .keyboard {
+    display: flex;
+    max-height: 215px;
+}
+
+.calculator .keyboard button {
+    width: 35px;
+    height: 30px;
+    margin: 3px;
+    background: linear-gradient(#F0F6FB 30%, #D5E0ED 50%);
+}
+
+.calculator .keyboard button:hover,
+.calculator .digits button:not(:disabled):hover {
+    background: linear-gradient(#FEEEDF 30%, #FBD178 50%, #FBE889 95%);
+    border: 1px solid #FCFCD4;
+    box-shadow: 0 0 2px #FBE66D;
+}
+
+.calculator .hex-letters button,
+.calculator .operations.memory button,
+.calculator .keyboard button:disabled,
+.calculator .hex-letters button:hover,
+.calculator .keyboard button:disabled:hover {
+    background: none;
+}
+
+.calculator .hex-letters button,
+.calculator .keyboard button:disabled,
+.calculator .hex-letters button:hover,
+.calculator .keyboard button:disabled:hover {
+    border: 1px solid #B7C5D4;
+    box-shadow: none;
+}
+
+.calculator .digits button,
+.calculator .hex-letters button {
+    font-size: 16px;
+}
+
+.calculator .digits button:not(:disabled) {
+    background: linear-gradient(#F0F6FB 30%, #E7EDF5 40%);
+}
+
+.calculator .formats {
+    margin: 3px 3px 0 0;
+}
+
+.calculator .formats .group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90px;
+    width: 70px;
+    padding: 5px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.calculator .formats .group:first-child {
+    margin-bottom: 6px;
+}
+
+.calculator .formats .group input {
+    position: absolute;
+    opacity: 0;
+}
+
+.calculator .formats input ~ span:before,
+.calculator .formats input:checked ~ span:before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+    margin-right: 5px;
+    background: radial-gradient(farthest-side at 35% 35%, #BCC0C6, #ffffff);
+    border: 2px solid #F0FAFF;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #142231;
+}
+
+.calculator .formats input:checked ~ span:before {
+    background: radial-gradient(farthest-side at 35% 35%, #BBEAF2 10%, #32AFD4 40%, #092D49 80%);
+}
+
+.calculator .digits div,
+.calculator .operations div,
+.calculator .operations:not(.column) {
+    display: flex;
+    flex-direction: row;
+}
+
+.calculator .hex-letters {
+    width: 40px;
+}
+
+.calculator .operation-cols {
+    display: flex;
+}
+
+.calculator button.strong {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.calculator .digits button.large {
+    width: 75px;
+}
+
+.calculator .basic-math button.large {
+    height: 65px;
+}
+
+.calculator .basic-math button.plus {
+    position: relative;
+    top: -35px;
+}

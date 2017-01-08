@@ -1,0 +1,95 @@
+.members-login {
+    display: inline-block;
+    width: 660px;
+    background-color: #3B3B3B;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Times New Roman', serif;
+}
+
+.members-login header {
+    position: relative;
+}
+
+.members-login header:before,
+.members-login header:after {
+    content: '';
+    display: inline-block;
+    width: 70px;
+    height: 60px;
+}
+
+.members-login header:before {
+    background: url('images/screen.png') no-repeat center center;
+}
+.members-login header:after {
+    position: absolute;
+    right: 10px;
+    background: url('images/button.png') no-repeat center center;
+}
+
+.members-login header .login {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 60px;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.members-login header .login input {
+    width: 150px;
+    margin: 0 10px;
+}
+
+.members-login header .login input::-webkit-input-placeholder {
+    padding-left: 10px;
+    color: #000000;
+}
+
+.members-login hr {
+    height: 1px;
+    background-image: linear-gradient(to right, #3B3B3B, #262626, #3B3B3B);
+    border: 0;
+}
+
+.members-login hr:before,
+.members-login hr:after {
+    content:'';
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.members-login hr:before {
+    bottom: 10px;
+    height: 30px;
+    background: radial-gradient(ellipse at center, #262626, #3B3B3B 75%);
+}
+
+.members-login hr:after {
+    bottom: 30px;
+    height: 30px;
+    background-color: #3B3B3B;
+}
+
+.members-login .about {
+    margin: 15px;
+    padding-right: 50px;
+}
+
+.members-login .about .title {
+    margin: 25px 0;
+    color: #F8D61C;
+    font-size: 28px;
+}
+
+.members-login .about .content {
+    color: #A0A0A0;
+    line-height: 20px;
+    font-family: 'Lucida Grande', sans-serif;
+    font-weight: 100;
+}
+
+.members-login .copyright {
+    color: #FFFFFF;
+}

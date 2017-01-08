@@ -1,0 +1,69 @@
+.laptop-store {
+    width: 700px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.header {
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+}
+
+.header a {
+    color: skyblue;
+}
+
+.laptop-store .main-content {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.offers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.laptop {
+    position: relative;
+    width: 200px;
+    margin: 10px 0;
+    padding: 5px;
+    border-top: 0 !important;
+}
+
+.offers, .laptop {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.laptop .model {
+    position: absolute;
+    top: -10px;
+    left: 40px
+}
+
+.laptop img {
+    width: 100px;
+}
+
+.laptop .parameters {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.search-criteria {
+    padding: 20px;
+}
+
+.search-criteria .value {
+    float: right;
+}

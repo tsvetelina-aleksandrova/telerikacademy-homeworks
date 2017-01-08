@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Nested Divs</title>
+    <link rel="stylesheet" href="nestedDivs.css"/>
+</head>
+<body>
+    <div class="nested-divs"></div>
+    <script>
+        (function() {
+            'use strict';
+            var previousDiv = document.getElementsByClassName('nested-divs')[0];
+            for(var i = 0; i < 60; i += 1) {
+                var divElem = document.createElement('div');
+                if (i === 25) {
+                    divElem.className = 'nesting-end';
+                }
+                previousDiv.appendChild(divElem);
+                previousDiv = divElem;
+            }
+        }());
+    </script>
+</body>

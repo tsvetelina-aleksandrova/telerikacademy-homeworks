@@ -1,0 +1,31 @@
+.tree-view {
+    display: inline-block;
+    color: #000000;
+    font-size: 18px;
+    font-family: 'Times New Roman' serif;
+}
+
+.tree-view a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.tree-view a:hover {
+    text-decoration: underline;
+}
+
+.tree-view ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.tree-view li ul {
+    display: none;
+    color: #888888;
+    font-size: 16px;
+    padding-left: .6em;
+}
+
+.tree-view li:hover > ul {
+    display: block;
+}

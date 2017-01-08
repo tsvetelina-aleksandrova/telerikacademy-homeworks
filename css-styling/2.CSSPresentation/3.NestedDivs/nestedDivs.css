@@ -1,0 +1,19 @@
+.nested-divs {
+    width: 1000px;
+    height: 100px;
+    margin: 10px;
+}
+
+.nested-divs div {
+    width: 94%;
+    height: 100%;
+    max-height: 50px;
+    box-sizing: border-box;
+    background-color: #000000;
+    border: 1px solid #f00000;
+    border-radius: 100px;
+}
+
+.nested-divs .nesting-end {
+    display: none;
+}

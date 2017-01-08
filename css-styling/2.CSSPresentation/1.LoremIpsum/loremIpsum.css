@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'EdwardianScriptITC';
+    src: url('./fonts/EdwardianScriptITC.ttf');
+}
+
+.lorem {
+    font-family: 'Consolas', monospace;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #0094ff;
+}
+
+.lorem:first-line {
+    font-weight: 600;
+}
+
+.lorem:first-letter {
+    font-family: 'EdwardianScriptITC';
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 400;
+}

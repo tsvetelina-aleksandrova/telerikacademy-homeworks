@@ -1,0 +1,60 @@
+.employees table {
+    border-collapse: collapse;
+}
+
+.employees table tr:nth-child(2n + 1) {
+    background-color: #ececd8;
+}
+
+.employees table tr:first-child {
+    background-image: linear-gradient(to bottom, #5cc006 30%, #50b306);
+}
+
+.employees table tr:first-child,
+.employees table tr:last-child {
+    border-bottom: 1px solid #407f29;
+}
+
+.employees table th {
+    text-align: left;
+    font-weight: 400;
+    color: white;
+}
+
+.employees table th:not(:first-child) {
+    border-left: 1px solid #407f29;
+}
+
+.employees table th,
+.employees table td {
+    padding: 5px;
+    padding-right: 40px;
+}
+
+.employees table td:not(:last-child) {
+    border-right: 1px solid #b1acac;
+}
+
+.employees .flag:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.employees .flag.de:before {
+    background-image: url('http://flagpedia.net/data/flags/mini/de.png');
+}
+
+.employees .flag.mx:before {
+    background-image: url('http://flagpedia.net/data/flags/mini/mx.png');
+}
+
+.employees .flag.gb:before {
+    background-image: url('http://flagpedia.net/data/flags/mini/gb.png');
+}

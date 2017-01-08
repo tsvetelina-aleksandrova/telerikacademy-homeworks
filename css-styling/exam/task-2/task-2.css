@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #26292C;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+}
+
+.navigation {
+    position: absolute;
+    right: 200px;
+    color: #868686;
+    background-color: #3C3C3C;
+}
+
+.navigation .nav-tabs {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    list-style-type: none;
+}
+
+.navigation .nav-item.show-nav {
+    padding: 15px 100px 15px 40px;
+    border-bottom: 0 !important;
+}
+
+.navigation:hover .nav-item.show-nav,
+.navigation .nav-item:hover {
+    background-color: #80807C;
+}
+
+.navigation .nav-item:not(.show-nav) {
+    display: none;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.navigation .nav-item:not(:last-child) {
+    border-bottom: 1px solid #524A4A;
+}
+
+.navigation:hover .nav-item:not(.show-nav) {
+    display: block;
+}
+
+.navigation .nav-item:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+.navigation .nav-item.file-html:before {
+    background: url('imgs/html-icon.png');
+    background-size: contain;
+}
+
+.navigation .nav-item.file-css:before {
+    background: url('imgs/css-icon.png');
+    background-size: contain;
+}
+
+.navigation .nav-item.file-sass:before {
+    background: url('imgs/sass-icon.png');
+    background-size: contain;
+}
+
+.code-lines {
+    color: #ffffff;
+    line-height: 20px;
+}
+
+.code-lines .selector {
+    color: #66C50E;
+}
+
+.code-lines .property {
+    margin-left: 15px;
+    color: #44B1CE;
+    font-style: italic;
+}
+.code-lines .measure {
+    color: #B7205C;
+}
+
+.code-lines .value {
+    color: #7C61C0;
+}
+.code-lines .function {
+    color: #A22A2A;
+}
+
+.code-lines .punctuation {
+    color: #CFD4A4;
+}
+
+.code-lines .punctuation:only-child,
+.code-lines .selector + .punctuation {
+    color: #61897D;
+}
+
+.code-lines li:hover {
+    background-color: #4C5354;
+}
+
+.code-lines li:hover .selector {
+    color: #A4E405;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.code-lines li:hover .selector + .punctuation {
+    color: #D3D19D;
+}
+
+.code-lines li:hover .property {
+    color: #5FD8F0;
+}

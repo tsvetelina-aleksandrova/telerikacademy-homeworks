@@ -1,0 +1,14 @@
+<h1 class="text-center">{{movie.title}}</h1>
+<table class="table">
+    <tr>
+        <td>
+            <img [src]="movie.poster" [alt]="movie.title">
+        </td>
+        <td class="text-center">
+            Year: {{movie.year}}<br>
+            Genre: {{movie.genre}}<br>
+            Rated: {{movie.rated}}<br>
+            iMDB Rating: {{movie.imdbRating}}
+        </td>
+    </tr>
+</table>

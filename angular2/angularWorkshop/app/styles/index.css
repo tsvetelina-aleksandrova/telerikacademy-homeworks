@@ -1,0 +1,26 @@
+movies-list {
+    padding: 10px;
+}
+
+.filter-controls {
+    width: 70%;
+    margin: auto;
+}
+
+.filter-controls .form-group:not(:first-child) {
+    display: inline-block;
+    width: 30%;
+}
+
+.table {
+    width: 80%;
+    margin: auto;
+}
+
+.table th {
+    border-top: none !important;
+}
+
+.table img {
+    max-width: 150px;
+}

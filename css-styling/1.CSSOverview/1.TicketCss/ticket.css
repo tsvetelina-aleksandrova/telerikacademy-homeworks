@@ -1,0 +1,69 @@
+.ticket {
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    color: #cccccc;
+    background-color: #595959;
+}
+
+.ticket a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.ticket table caption {
+    font-size: 1.5em;
+}
+
+.ticket table th {
+    padding-right: 1.2em;
+    vertical-align: top;
+    color: #f1f1f1;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.ticket table th:after {
+    content: ':';
+}
+
+.ticket table caption,
+.ticket table th {
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.ticket table caption,
+.ticket table td {
+    padding-bottom: .8em;
+}
+
+.ticket table td:not(.user.email):first-letter {
+    text-transform: uppercase;
+}
+
+.ticket .user {
+    color: #fafad2;
+}
+
+.ticket .user.name:before {
+    content: '';
+    display: inline-block;
+    margin-right: .3em;
+    border: .4em solid #7db27d;
+    border-radius: 50%;
+}
+
+.ticket .user.last-action {
+    display: inline-block;
+    margin-top: .8em;
+}
+
+.ticket .support {
+    color: #ff0000;
+    text-transform: capitalize;
+}
+
+.ticket .status {
+    color: #ff9000;
+}

@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+#wrapper {
+    display: inline-block;
+    padding: 15px;
+    background-color: #E3E3E3;
+}
+
+.article {
+    width: 559px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #000000;
+}
+
+.header {
+    position: relative;
+    padding: 20px;
+    color: #5F5F5F;
+}
+
+.publisher {
+    margin-left: 10px;
+}
+
+.timestamp {
+    position: absolute;
+    right: 20px;
+    color: #BFC4D1;
+}
+
+.importance {
+    margin: 15px 0;
+    color: #3C3C3C;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.title {
+    width: 80%;
+    padding-top: 20px;
+    font-size: 26px;
+    border-top: 1px solid #E3E3E3;
+}
+
+.footer {
+    padding: 20px;
+    color: #5F5F5F;
+}
+
+.footer > div {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.comments, .shares {
+    float: right;
+}
+
+.likes:before, .comments:before, .shares:before {
+    content: '';
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.likes:before {
+    background: url('imgs/number.png');
+}
+
+.comments:before {
+    background: url('imgs/comment.png');
+}
+
+.shares:before {
+    background: url('imgs/share.png');
+}

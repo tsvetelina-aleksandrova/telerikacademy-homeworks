@@ -1,0 +1,73 @@
+.music-categories {
+    display: inline-block;
+    width: 410px;
+    font-size: 12px;
+    font-family: 'Arial', sans-serif;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+}
+
+.music-categories .heading {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.music-categories .content,
+.music-categories .category  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.music-categories .category {
+    flex-direction: row;
+    width: 390px;
+    height: 120px;
+    margin: 20px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+}
+
+.music-categories .category,
+.music-categories img {
+    border: 1px solid #AFAFAF;
+}
+
+.music-categories .category img {
+    width: 130px;
+}
+
+.music-categories .category .description {
+    position: relative;
+    width: 210px;
+}
+
+.music-categories .category img,
+.music-categories .category .description {
+    height: 100%;
+}
+
+.music-categories .category .description a {
+    color: #1E1E1E;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.music-categories .category .description .actions {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.music-categories .category .actions button {
+    -webkit-appearance: none;
+    width: 70px;
+    padding: 5px 0 5px 20px;
+    color: #FFFFFF;
+    font-size: 14px;
+    background: url('images/button.png');
+    background-size: 70px 25px;
+    border: 0;
+}

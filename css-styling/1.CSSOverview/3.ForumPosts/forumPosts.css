@@ -1,0 +1,66 @@
+body {
+    padding: 10px;
+    font: serif;
+    font-weight: 400;
+    background-color: #a9a9a9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    font-size: 22px;
+    text-align: center;
+}
+
+section header {
+    font-size: 20px;
+    text-align: left;
+}
+
+h1 {
+    color: #fafad2;
+}
+
+nav {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li:last-child  {
+    text-decoration: underline;
+}
+
+nav ul .current {
+    background-color: #d3d3d3;
+}
+
+article:nth-child(2) {
+    display: none;
+}
+
+p {
+    max-width: 900px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+article footer p {
+    font-size: 12px;
+    text-align: left;
+}
+
+footer {
+    font-size: 16px;
+    text-align: center;
+}

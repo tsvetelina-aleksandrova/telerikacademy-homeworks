@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css"/>
+</head>
+<body>
+    <div class="calculator">
+        <div class="header">Calculator</div>
+        <div class="content-wrapper">
+            <div class="file-menu">
+                <button>View</button>
+                <button>Edit</button>
+                <button>Help</button>
+            </div>
+            <div class="content">
+                <div class="display">8854455</div>
+                <div class="bits">
+                    <div class="row">
+                        <div class="quad">
+                            <div class="row bin">
+                                <span>00 00</span><span>00 00</span><span>00 00</span><span>00 00</span>
+                            </div>
+                            <div class="row dec">
+                                <span>63</span>
+                            </div>
+                        </div>
+                        <div class="quad">
+                            <div class="row bin">
+                                <span>00 00</span><span>00 00</span><span>00 00</span><span>00 00</span>
+                            </div>
+                            <div class="row dec">
+                                <span>47</span><span class="end">32</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="quad">
+                            <div class="row bin">
+                                <span>00 00</span><span>00 00</span><span>10 00</span><span>01 11</span>
+                            </div>
+                            <div class="row dec">
+                                <span>31</span>
+                            </div>
+                        </div>
+                        <div class="quad">
+                            <div class="row bin">
+                                <span>00 01</span><span>10 11</span><span>10 11</span><span>01 11</span>
+                            </div>
+                            <div class="row dec">
+                                <span class="start">15</span><span class="end">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="keyboard">
+                    <div class="formats">
+                        <div class="group">
+                            <div><input type="radio" name="system" value="hex"/><span>hex</span></div>
+                            <div><input type="radio" name="system" value="dec" checked/><span>dec</span></div>
+                            <div><input type="radio" name="system" value="oct"/><span>oct</span></div>
+                            <div><input type="radio" name="system" value="Bin"/><span>bin</span></div>
+                        </div>
+                        <div class="group">
+                            <div><input type="radio" name="size" value="qword" checked/><span>qword</span></div>
+                            <div><input type="radio" name="size" value="dword"/><span>dword</span></div>
+                            <div><input type="radio" name="size" value="word"/><span>word</span></div>
+                            <div><input type="radio" name="size" value="byte"/><span>byte</span></div>
+                        </div>
+                    </div>
+                    <div class="operations bin column">
+                        <div>
+                            <button disabled> </button>
+                            <button>Mod</button>
+                        </div>
+                        <div>
+                            <button>(</button>
+                            <button>)</button>
+                        </div>
+                        <div>
+                            <button>RoL</button>
+                            <button>RoR</button>
+                        </div>
+                        <div>
+                            <button>Or</button>
+                            <button>Xor</button>
+                        </div>
+                        <div>
+                            <button>Lsh</button>
+                            <button>Rsh</button>
+                        </div>
+                        <div>
+                            <button>Not</button>
+                            <button>And</button>
+                        </div>
+                    </div>
+                    <div class="hex-letters">
+                        <button>A</button>
+                        <button>B</button>
+                        <button>C</button>
+                        <button>D</button>
+                        <button>E</button>
+                        <button>F</button>
+                    </div>
+                    <div>
+                        <div class="operations memory">
+                            <button>MC</button>
+                            <button>MR</button>
+                            <button>MS</button>
+                            <button>M+</button>
+                            <button>M-</button>
+                        </div>
+                        <div class="operation-cols">
+                            <div>
+                                <div class="operations delete">
+                                    <button class="strong">&larr;</button>
+                                    <button>CE</button>
+                                    <button>C</button>
+                                </div>
+                                <div class="digits">
+                                    <div>
+                                        <button>7</button>
+                                        <button>8</button>
+                                        <button>9</button>
+                                    </div>
+                                    <div>
+                                        <button>4</button>
+                                        <button>5</button>
+                                        <button>6</button>
+                                    </div>
+                                    <div>
+                                        <button>1</button>
+                                        <button>2</button>
+                                        <button>3</button>
+                                    </div>
+                                    <div>
+                                        <button class="large">0</button>
+                                        <button disabled>.</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="operations basic-math column">
+                                <div>
+                                    <button>&plusmn;</button>
+                                    <button disabled>&Sqrt;</button>
+                                </div>
+                                <div>
+                                    <button>/</button>
+                                    <button disabled>%</button>
+                                </div>
+                                <div>
+                                    <button>*</button>
+                                    <button disabled>1/&xscr;</button>
+                                </div>
+                                <div>
+                                    <button>-</button>
+                                    <button class="strong large">=</button>
+                                </div>
+                                <div><button class="plus">+</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

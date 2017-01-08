@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 5px;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    background-color: lightgray;
+}
+
+.documentation {
+    display: inline-block;
+    padding: 5px;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+a {
+    color: darkred;
+}
+
+.nav, .main-container {
+    float: left;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav.nav-left .group {
+    margin: 10px 0;
+}
+
+.nav > .title {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.nav .group .title {
+    color: darkred;
+}
+
+.main-container {
+    max-width: 500px;
+    padding: 5px;
+    margin: 0 5px;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.main-container .header, .main-container .footer {
+    padding: 5px 0;
+    margin: 5px 0;
+    border-bottom: 1px solid gray;
+}
+
+.main-container .footer {
+    border-top: 1px solid gray;
+}
+
+.main-container .header .title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.main-container .group .title,
+.nav.nav-right .group .title {
+    padding-left: 5px;
+    color: white;
+    background-color: gray;
+}
+
+.main-container img {
+    float: left;
+    margin: 0 10px 30px 0;
+}
+
+.main-container .tutorial-description p {
+    font-weight: 600;
+}
+
+.main-container .group {
+    position: relative;
+    padding: 5px 0;
+}
+
+.main-container .header button, .main-container .footer button {
+    position: relative;
+    width: 120px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+button.prev:after {
+    content: '<';
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+}
+
+button.next:after {
+    content: '>';
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+}
+
+.nav.nav-right a {
+    display: block;
+}
+
+.nav.nav-right .group {
+    width: 170px;
+    margin-bottom: 2px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.nav.nav-right .group .content {
+    padding: 5px;
+}
+
+.nav.nav-right input {
+    width: 100px;
+}
+
+.nav.nav-right button {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
